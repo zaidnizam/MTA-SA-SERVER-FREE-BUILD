@@ -1,0 +1,9 @@
+<meta>
+    <script src="Auth_Client.lua" type="client"/>
+    <script src="Auth_Server.lua" type="server"/>
+    <file src="frontend/index.html"/>
+    <file src="frontend/style/tailwind.min.js"/>
+    <file src="frontend/style/tailwind.min.css"/>
+    <file src="frontend/style/alpine.min.js"/>
+    <!-- <file src="frontend/"/> -->
+</meta>

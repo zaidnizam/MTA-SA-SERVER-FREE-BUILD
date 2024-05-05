@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Login/Register</title>
+  <link href="style/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 rounded-lg shadow-lg p-8 max-w-md w-full">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold text-white">HACXK Role-Play</h1>
+      <p class="text-red-400">Real World Experince in low end PC :)</p>
+      <p class="text-gray-400">Enter your credentials to access the game</p>
+    </div>
+    <div>
+      <div class="mb-4">
+        <label class="block text-gray-300 font-bold mb-2" for="email">
+          Email or Username
+        </label>
+        <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="emailorusername" type="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-300 font-bold mb-2" for="password">
+          Password
+        </label>
+        <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="passwordlogin" type="password" placeholder="Enter your password">
+      </div>
+      <p class="text-red-500 text-xs italic" id="loginError"></p>  
+      <div class="flex items-center justify-between">
+        <button onclick="loginPlayer()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" id="loginButton">
+            <span id="loginText">Login</span>
+            <svg class="animate-spin h-5 w-5 mr-3 hidden" id="loadingSpinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A8.004 8.004 0 014.707 10H2c0 3.314 2.686 6 6 6v-2.009zm11.722-4.295A8.003 8.003 0 0120 12h-4v2h6v-6h-2v2c0 .39-.04.772-.118 1.147z"></path>
+            </svg>
+        </button>      
+        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+          Forgot Password?
+        </a>
+      </div>
+    </div>
+    <div class="mt-8 text-center">
+      <p class="text-gray-400">Don't have an account?</p>
+      <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Register
+      </button>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="registerModal">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+        <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+      </div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+      <div class="inline-block align-bottom bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+        <div class="bg-gray-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+            <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+              <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+              </svg>
+            </div>
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+              <h3 class="text-lg leading-6 font-medium text-gray-300" id="modal-headline">
+                Register
+              </h3>
+              <div class="mt-2">
+                <p class="text-sm text-gray-400">
+                  Create a new account to join the game.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-700 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="mb-4">
+                <label class="block text-gray-300 font-bold mb-2" for="registerEmail">
+                    Email
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="registerEmail" type="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-300 font-bold mb-2" for="registerUsername">
+                    Username
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="registerUsername" type="text" placeholder="Enter your username">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-300 font-bold mb-2" for="registerPlayerName">
+                    Player Name (in-game name)
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="registerPlayerName" type="text" placeholder="Enter your player name">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-300 font-bold mb-2" for="registerPassword">
+                    Password
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="registerPassword" type="password" placeholder="Enter your password">
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-300 font-bold mb-2" for="confirmPassword">
+                    Confirm Password
+                </label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="confirmPassword" type="password" placeholder="Confirm password">
+                <p class="text-red-500 text-xs italic" id="passwordError"></p>
+            </div>
+        </div>
+        <div class="bg-gray-800 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <button type="button" onclick="register()" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm">
+                Register
+            </button>
+            <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm" id="closeRegisterModal">
+                Cancel
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+   // Toggle functionality for register modal
+const registerModal = document.getElementById('registerModal');
+const registerButton = document.querySelector('.bg-green-500');
+const closeRegisterModal = document.getElementById('closeRegisterModal');
+const registerEmail = document.getElementById('registerEmail');
+const registerPassword = document.getElementById('registerPassword');
+const registerSubmitButton = registerModal.querySelector('button[type="button"]');
+
+// Email validation
+function isValidEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
+
+// Password validation
+function isValidPassword(password) {
+  // Add your password validation logic here
+  // For example, you can check for minimum length, special characters, etc.
+  return password.length >= 8;
+}
+
+registerButton.addEventListener('click', () => {
+  registerModal.classList.remove('hidden');
+});
+
+closeRegisterModal.addEventListener('click', () => {
+  registerModal.classList.add('hidden');
+});
+
+registerSubmitButton.addEventListener('click', () => {
+  const email = registerEmail.value.trim();
+  const password = registerPassword.value.trim();
+
+     // Validate if password and confirm password match
+     const passwordError = document.getElementById("passwordError");
+
+  if (!isValidEmail(email)) {
+    passwordError.textContent = "Please enter a valid email address.";
+    return;
+  }
+
+  if (!isValidPassword(password)) {
+    passwordError.textContent = "Please enter a valid password (minimum 8 characters).";
+    return;
+  }
+
+});
+
+function register() {
+    const email = document.getElementById("registerEmail").value;
+    const username = document.getElementById("registerUsername").value;
+    const playerName = document.getElementById("registerPlayerName").value;
+    const password = document.getElementById("registerPassword").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    
+    // Validate if password and confirm password match
+    const passwordError = document.getElementById("passwordError");
+    if (password !== confirmPassword) {
+        passwordError.textContent = "Passwords do not match";
+        return;
+    } else {
+        passwordError.textContent = ""; // Clear error message if passwords match
+    }
+
+    // If everything is valid, proceed with registration
+    console.log("Email:", email);
+    console.log("Username:", username);
+    console.log("Player Name:", playerName);
+    console.log("Password:", password);
+
+
+
+
+    if (!username || !email || !playerName || !confirmPassword) {
+        passwordError.textContent = "Please fill in all fields.";
+        return;
+    } else {
+        mta.triggerEvent("playerRegister", "Register", email, username, confirmPassword, playerName); 
+    }
+
+    // Here you can send the registration data to the server for further processing
+}
+
+function loginPlayer() {
+    // Validate if username and password are filled
+    const loginError = document.getElementById("loginError");
+    const username = document.getElementById("emailorusername").value;
+    const password = document.getElementById("passwordlogin").value;
+
+    if (!username || !password) {
+        loginError.textContent = "Please fill in both username/email and password fields.";
+        return;
+    } else {
+        // Clear any previous error messages
+        loginError.textContent = "";
+
+        // Show loading spinner and hide button text
+        document.getElementById("loadingSpinner").classList.remove("hidden");
+        document.getElementById("loginText").classList.add("hidden");
+
+        // Simulate login process (replace with actual login code)
+        setTimeout(() => {
+            // Once login process is complete, hide loading spinner and show button text again
+            document.getElementById("loadingSpinner").classList.add("hidden");
+            document.getElementById("loginText").classList.remove("hidden");
+
+            // Here you can proceed with your login logic
+            console.log("Login successful!");
+        }, 2000); // Simulating login with a timeout of 2 seconds (replace with actual login code)
+
+        // If everything is valid, proceed with login
+        console.log("Username:", username);
+        console.log("Password:", password);
+        // Send username and password to the server
+        mta.triggerEvent("playerLogin", "login", username, password);
+    }
+}
+
+
+    </script>
+    </body>
+</html>

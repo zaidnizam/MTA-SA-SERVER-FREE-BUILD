@@ -1,0 +1,10 @@
+<meta>
+<info Author="SuperCroz" version="1.5" type="script" />
+	<script src="fuel-c.lua" type="client" />
+   <script src="fuel-s.lua" type="server" />
+<file src="fuelcircle.png" />
+<file src="fuelarrow.png" />
+<file src="speedarrow.png" />
+<file src="speedcircle.png" />
+<file src="carhealth.png" />
+</meta>

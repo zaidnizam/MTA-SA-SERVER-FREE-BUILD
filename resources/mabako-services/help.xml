@@ -1,0 +1,14 @@
+<help>Mabako services version 2.4.0
+made originally by mabako on older versions, patched and improved to make it work on MTA SA 1.0 or newer, and 1.1 onwards by XX3. Minor fixes by robhol.
+
+If you don't understand how this works, here's some tutorial:
+To get food, go to the burger, pizza or cluckin bell blip. (it will appear if you are close enough to the building) Go to the counter and choose one of these food. It will restore some health in one click.
+
+To get weapons, go to the ammunation blip, go to the counter and buy each of the weapons included by going to the counter.
+
+Jetpacks can be used/removed by pressing "J" (If you got freeroam resource loaded, it will run 2 times at once if you pressed J, so you wouldn`t see the jetpack. Solution: Change the bind key)
+Jetpacks have fuels, and can be refueled through ammu-nation. Use the jetpack wisely, so you don't run out of fuel in the air.
+
+For owners:
+You can edit the price, available weapons, ammo included per buy,  locations of pay'n'spray, in the maps folder.
+</help>
