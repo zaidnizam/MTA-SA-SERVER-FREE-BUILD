@@ -26,16 +26,16 @@ Explore the labyrinthine depths of our repository, where each folder, each file,
 We extend our deepest gratitude to the visionary minds and tireless souls who have contributed to the creation of this repository. Their dedication and expertise have woven the very fabric of this immersive experience, forging a path into the unknown and shaping worlds that defy limits.
 
 - **Mabako**: _For giving free shop system._
-  - [Mabako File URL](https://community.multitheftauto.com/index.php?p=resources&s=details&id=4)
+  - [Mabako Shop_System URL](https://community.multitheftauto.com/index.php?p=resources&s=details&id=4)
 
-- **Jane Smith**: _For designing stunning visual enhancements that elevate gameplay to ethereal heights._
-  - [Jane's Repository](https://github.com/janesmith)
+- **SuperCroz**: _For designing stunning visual Speedmeter and Fuel Sytem._
+  - [SuperCroz's Fuel System URL](https://community.multitheftauto.com/index.php?p=resources&s=details&id=9589)
 
-- **Max Johnson**: _For relentless testing and invaluable feedback that ensured seamless integration, ensuring a polished experience._
-  - [Max's Repository](https://github.com/maxjohnson)
+- **Gamesnert, scarface1994**: _For Free Full Game MAP._
+  - [Gamesnert, scarface1994's Game Map URL](https://community.multitheftauto.com/index.php?p=resources&s=details&id=381)
 
-- **Emily Davis**: _For her expertise in database management, ensuring stability and performance that defies expectations._
-  - [Emily's Repository](https://github.com/emilydavis)
+- **Mega9**: _For Giving Free Modern TollBooth System To the Server._
+  - [Mega9's Tollbooth URL](https://community.multitheftauto.com/index.php?p=resources&s=details&id=5101)
 
 ## 🌟 Guiding Light
 
@@ -84,3 +84,24 @@ Stay informed, inspired, and engaged by connecting with us on our official chann
 - [Forums](https://forum.mtasa.com/)
 
 _**Embrace the enigma, transcend reality, and let the abyss consume you.**_
+
+#MTA:SA
+#Deathmatch
+#Mods
+#Repository
+#Gaming
+#Multiplayer
+#Script optimization
+#Visual enhancements
+#Seamless integration
+#Database management
+#Stability
+#Performance
+#Immersive experience
+#Customization
+#Community-driven
+#Collaboration
+#Open-source
+#Exploration
+#Creativity
+#Infinite possibilities
