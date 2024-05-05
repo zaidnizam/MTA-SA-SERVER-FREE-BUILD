@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Role-play Car Shop</title>
+    <link href="style/tailwind.min.css" rel="stylesheet">
+    <style>
+        .category-button {
+            @apply bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded m-1 uppercase tracking-wide;
+        }
+        .category-button.active {
+            @apply bg-red-500 hover:bg-red-600 text-white;
+        }
+    </style>
+</head>
+<body class="bg-gray-500 text-white p-4">
+    <div id="popup"></div>
+    <h1 class="text-4xl font-bold mb-8 text-center text-yellow-500">GTA Role-play Car Shop</h1>
+    <div class="mb-8">
+      <div class="flex flex-wrap justify-center mb-8">
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 mr-2 mb-2" onclick="filterByType('Plane')">
+          <span class="mr-2">Planes</span>
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+        </button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Boats')">Boats</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Helicopter')">Helicopters</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Bikes')">Bikes</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('2-Door & Compact cars')">2-Door & Compact</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('4-Door & Luxury cars')">4-Door & Luxury</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Civil service')">Civil Service</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Government vehicles')">Government</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Heavy & Utility trucks')">Heavy Trucks</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Light trucks & Vans')">Light Trucks</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('SUVs & Wagons')">SUVs & Wagons</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Lowriders')">Lowriders</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Muscle cars')">Muscle Cars</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Street racers')">Street Racers</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('RC Vehicles')">RC Vehicles</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Trailers')">Trailers</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2mb-2" onclick="filterByType('Trains & Railroad cars')">Trains</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="filterByType('Recreational')">Recreational</button>
+        <button class="category-button relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 mr-2 mb-2" onclick="showAll()">Show All</button>
+        </div>
+    </div>
+
+    <!-- Developer Mode: HTML with Tailwind CSS for an Advanced Floating Button -->
+    <button onclick="closeWindow()" class="bg-red-400 hover:bg-purple-900 text-white font-semibold py-3 px-6 rounded-full shadow-lg fixed bottom-10 right-10 z-50 transform transition duration-300 hover:scale-105">
+    Exit Shop!
+    </button>
+  
+
+    <div id="xmlData" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Vehicle cards will be inserted here -->
+    </div>
+
+    <script>
+        var allData = ''; // To store all XML data
+
+        // Function to load and display XML data
+        function loadXML() {
+            // Path to the XML file
+            var xmlFilePath = '../vehicle_details.xml';
+
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Define a callback function to handle the response
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // XML data received successfully
+                        allData = xhr.responseText;
+
+                        // Display the XML data
+                        displayVehicles(allData);
+                    } else {
+                        // Error handling
+                        console.error('Failed to load XML file: ' + xhr.status);
+                    }
+                }
+            };
+
+            // Open the XMLHttpRequest and specify the GET method
+            xhr.open('GET', xmlFilePath, true);
+
+            // Send the request
+            xhr.send();
+        }
+
+        // Function to display vehicle data in an e-commerce style
+        function displayVehicles(xmlData) {
+            var vehiclesHTML = '';
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(xmlData, 'text/xml');
+            var vehicleNodes = xmlDoc.querySelectorAll('vehicle');
+
+            vehicleNodes.forEach(function(vehicleNode) {
+                vehiclesHTML += '<div class="bg-gray-800 rounded-lg shadow-lg p-4">';
+                vehiclesHTML += '<img src="images/' + getImage(vehicleNode.querySelector('name').textContent) + '" alt="' + vehicleNode.querySelector('name').textContent + '" class="w-full h-48 object-cover rounded-t-lg">';
+                vehiclesHTML += '<div class="p-4">';
+                vehiclesHTML += '<h2 class="text-xl font-bold mb-2">' + vehicleNode.querySelector('name').textContent + '</h2>';
+                vehiclesHTML += '<p class="text-gray-400 mb-2">' + vehicleNode.querySelector('type').textContent + '</p>';
+                filteredData += '<p class="text-yellow-500 font-bold">Price:<span id="picee">' + getPrice(vehicleNode.querySelector('name').textContent) + '</span></p>';
+                filteredData += `<button onclick="buyFunc(${vehicleNode.querySelector('id').textContent})" class="text-yellow-500 bg-yellow-900 py-2 px-4 font-bold rounded-md hover:bg-yellow-800 hover:text-white focus:outline-none focus:bg-yellow-800 focus:text-white transition duration-300">Buy Now!</button>`;
+                filteredData += `<button onclick="testID(${vehicleNode.querySelector('id').textContent})" class="text-orange-500 bg-yellow-900 py-2 px-4 font-bold rounded-md hover:bg-yellow-800 hover:text-white focus:outline-none focus:bg-yellow-800 focus:text-white transition duration-300 ml-2 mt-3">Try!</button>`;
+                vehiclesHTML += '</div>';
+                vehiclesHTML += '</div>';
+            });
+
+            document.getElementById('xmlData').innerHTML = vehiclesHTML;
+        }
+
+        // Function to filter data by vehicle type
+        function filterByType(type) {
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(allData, 'text/xml');
+            var vehicleNodes = xmlDoc.querySelectorAll('vehicle');
+            var filteredData = '';
+
+            // Filter the data based on the selected type
+            vehicleNodes.forEach(function(vehicleNode) {
+                if (vehicleNode.querySelector('type').textContent === type) {
+                    filteredData += '<div class="bg-gray-800 rounded-lg shadow-lg p-4">';
+                    filteredData += '<img src="images/' + getImage(vehicleNode.querySelector('name').textContent) + '" alt="' + vehicleNode.querySelector('name').textContent + '" class="w-full h-48 object-cover rounded-t-lg">';
+                    filteredData += '<div class="p-4">';
+                    filteredData += '<h2 class="text-xl font-bold mb-2">' + vehicleNode.querySelector('name').textContent + '</h2>';
+                    filteredData += '<p class="text-gray-400 mb-2">' + vehicleNode.querySelector('type').textContent + '</p>';
+                    filteredData += '<p class="text-gray-400 mb-2">' + vehicleNode.querySelector('id').textContent + '</p>';
+                    filteredData += '<p class="text-yellow-500 font-bold">Price:<span id="picee">' + getPrice(vehicleNode.querySelector('name').textContent) + '</span></p>';
+                    filteredData += `<button onclick="buyFunc(${vehicleNode.querySelector('id').textContent})" class="text-yellow-500 bg-yellow-900 py-2 px-4 font-bold rounded-md hover:bg-yellow-800 hover:text-white focus:outline-none focus:bg-yellow-800 focus:text-white transition duration-300">Buy Now!</button>`;
+                    filteredData += `<button onclick="testID(${vehicleNode.querySelector('id').textContent})" class="text-orange-500 bg-yellow-900 py-2 px-4 font-bold rounded-md hover:bg-yellow-800 hover:text-white focus:outline-none focus:bg-yellow-800 focus:text-white transition duration-300 ml-2 mt-3">Try!</button>`;
+                    filteredData += '</div>';
+                    filteredData += '</div>';
+                }
+            });
+
+            // Update the displayed data with filtered data
+            document.getElementById('xmlData').innerHTML = filteredData;
+
+            // Toggle active class on buttons
+            var buttons = document.querySelectorAll('.category-button');
+            buttons.forEach(function(button) {
+                button.classList.remove('active');
+                if (button.textContent.trim() === type) {
+                    button.classList.add('active');
+                }
+            });
+        }
+
+        // Function to show all data
+        function showAll() {
+            // Reload the original XML data
+            displayVehicles(allData);
+        }
+
+        // Function to extract price from the vehicle name
+        function getPrice(name) {
+            // Add your logic to extract and return the price
+            // For example, if the price is included in the name, you can extract it here
+            return '$100000'; // Sample price
+        }
+
+        // Function to extract image file name from the vehicle name
+        function getImage(name) {
+            // Add your logic to extract and return the image file name
+            // For example, if the image file name is included in the name, you can extract it here
+            return 'vehicle_image.png'; // Sample image file name
+        }
+
+        function closeWindow() {
+            mta.triggerEvent("closeWindowGUI", "closeWindow"); 
+        }
+function testID(id) {
+    console.log(id)
+    mta.triggerEvent("testDrive", id); 
+    mta.triggerEvent("closeWindowGUI", "testID"); 
+}
+
+function buyFunc(id) {
+    const price = document.getElementById('picee').textContent;
+    const ids = id;
+    
+    // Create modal backdrop element
+    const modalBackdrop = document.createElement("div");
+    modalBackdrop.id = "modalBackdrop";
+    modalBackdrop.classList.add("fixed", "top-0", "left-0", "w-full", "h-full", "bg-black", "bg-opacity-50", "flex", "justify-center", "items-center", "z-50", "hidden");
+
+    // Create modal container element
+    const modalContainer = document.createElement("div");
+    modalContainer.classList.add("bg-white", "p-6", "rounded-lg", "shadow-lg");
+
+    // Add content to modal container
+    modalContainer.innerHTML = `
+        <p class="text-green-800 font-semibold mb-4">Confirm Payment!</p>
+        <p class="mb-4 text-gray-900">Are you sure you want to proceed with the ${price} of payment?</p>
+        <p class="text-red-700 text-xs italic" id="vehicleError"></p>
+        <div id="loadingSpinner" class="flex items-center justify-center mb-4 hidden">
+            <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-green-500"></div>
+        </div>
+        <div class="flex justify-center">
+            <button onClick="buy('${id}')" id="confirmButton" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 mr-2">Yes</button>
+            <button id="cancelButton" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">No</button>
+        </div>
+    `;
+
+    // Append modal container to modal backdrop
+    modalBackdrop.appendChild(modalContainer);
+
+    // Append modal backdrop to the specified div with ID "popup"
+    const popupDiv = document.getElementById("popup");
+    popupDiv.appendChild(modalBackdrop);
+
+    // Show the modal
+    modalBackdrop.classList.remove("hidden");
+
+
+    // Event listener for cancel button
+    const cancelButton = document.getElementById("cancelButton");
+    cancelButton.addEventListener("click", function() {
+        console.log("Payment cancelled!");
+        // Hide the modal
+        modalBackdrop.remove();
+    });
+
+}
+
+
+function buy(id) {
+    const price = document.getElementById('picee').textContent;
+    mta.triggerEvent("buyVehicle", id, price); 
+
+    const vehiError = document.getElementById("vehicleError");
+    let loadingAnimation = "Payment Processing";
+    let loadingInterval; // Declare the interval variable
+    
+    // Function to update the text content with loading animation
+    function updateLoadingAnimation() {
+        vehiError.textContent = loadingAnimation;
+        loadingAnimation += "."; // Add a dot to the loading animation
+        if (loadingAnimation.length > 20) { // Reset the animation after a certain length
+            loadingAnimation = "Payment Processing";
+        }
+    }
+    
+    // Set the initial text content and start the loading animation
+    updateLoadingAnimation();
+    
+    // Start the interval to update the loading animation every 500 milliseconds (half a second)
+    loadingInterval = setInterval(updateLoadingAnimation, 500);
+    
+    // Set the text content after 3 seconds
+    setTimeout(function() {
+        clearInterval(loadingInterval); // Stop the loading animation
+        vehiError.textContent = "You Don't Have Enough Money! Sorry.";
+    }, 2500); // 3000 milliseconds = 3 seconds   
+}
+
+
+        // Call the loadXML function when the page loads
+        window.onload = loadXML;
+    </script>
+</body>
+</html>

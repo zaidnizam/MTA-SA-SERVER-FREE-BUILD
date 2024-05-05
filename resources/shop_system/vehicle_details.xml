@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicles>
+	<vehicle>
+		<id>401</id>
+		<name>Bravura</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>402</id>
+		<name>Buffalo</name>
+		<type>Muscle cars</type>
+	</vehicle>
+	<vehicle>
+		<id>403</id>
+		<name>Linerunner</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>405</id>
+		<name>Sentinel</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>406</id>
+		<name>Dumper</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>407</id>
+		<name>Fire Truck</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>408</id>
+		<name>Trashmaster</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>409</id>
+		<name>Stretch</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>410</id>
+		<name>Manana</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>411</id>
+		<name>Infernus</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>412</id>
+		<name>Voodoo</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>413</id>
+		<name>Pony</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>414</id>
+		<name>Mule</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>415</id>
+		<name>Cheetah</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>416</id>
+		<name>Ambulance</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>417</id>
+		<name>Leviathan</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>418</id>
+		<name>Moonbeam</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>419</id>
+		<name>Esperanto</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>420</id>
+		<name>Taxi</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>421</id>
+		<name>Washington</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>422</id>
+		<name>Bobcat</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>423</id>
+		<name>Mr. Whoopee</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>424</id>
+		<name>BF Injection</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>425</id>
+		<name>Hunter</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>426</id>
+		<name>Premier</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>427</id>
+		<name>Enforcer</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>428</id>
+		<name>Securicar</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>429</id>
+		<name>Banshee</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>430</id>
+		<name>Predator</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>431</id>
+		<name>Bus</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>432</id>
+		<name>Rhino</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>433</id>
+		<name>Barracks</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>434</id>
+		<name>Hotknife</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>435</id>
+		<name>Trailer 1</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>436</id>
+		<name>Previon</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>437</id>
+		<name>Coach</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>438</id>
+		<name>Cabbie</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>439</id>
+		<name>Stallion</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>440</id>
+		<name>Rumpo</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>441</id>
+		<name>RC Bandit</name>
+		<type>RC Vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>443</id>
+		<name>Packer</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>444</id>
+		<name>Monster</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>445</id>
+		<name>Admiral</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>446</id>
+		<name>Squalo</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>447</id>
+		<name>Seasparrow</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>448</id>
+		<name>Pizzaboy</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>449</id>
+		<name>Tram</name>
+		<type>Trains &amp; Railroad cars</type>
+	</vehicle>
+	<vehicle>
+		<id>450</id>
+		<name>Trailer 2</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>451</id>
+		<name>Turismo</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>452</id>
+		<name>Speeder</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>453</id>
+		<name>Reefer</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>454</id>
+		<name>Tropic</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>455</id>
+		<name>Flatbed</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>456</id>
+		<name>Yankee</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>457</id>
+		<name>Caddy</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>459</id>
+		<name>Berkley's RC Van</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>460</id>
+		<name>Skimmer</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>461</id>
+		<name>PCJ-600</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>462</id>
+		<name>Faggio</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>463</id>
+		<name>Freeway</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>464</id>
+		<name>RC Baron</name>
+		<type>RC Vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>465</id>
+		<name>RC Raider</name>
+		<type>RC Vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>466</id>
+		<name>Glendale</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>467</id>
+		<name>Oceanic</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>468</id>
+		<name>Sanchez</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>469</id>
+		<name>Sparrow</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>470</id>
+		<name>Patriot</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>471</id>
+		<name>Quadbike</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>472</id>
+		<name>Coastguard</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>473</id>
+		<name>Dinghy</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>474</id>
+		<name>Hermes</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>475</id>
+		<name>Sabre</name>
+		<type>Muscle cars</type>
+	</vehicle>
+	<vehicle>
+		<id>476</id>
+		<name>Rustler</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>477</id>
+		<name>ZR-350</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>478</id>
+		<name>Walton</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>480</id>
+		<name>Comet</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>481</id>
+		<name>BMX</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>482</id>
+		<name>Burrito</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>483</id>
+		<name>Camper</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>484</id>
+		<name>Marquis</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>485</id>
+		<name>Baggage</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>486</id>
+		<name>Dozer</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>487</id>
+		<name>Maverick</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>488</id>
+		<name>News Chopper</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>490</id>
+		<name>FBI Rancher</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>491</id>
+		<name>Virgo</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>492</id>
+		<name>Greenwood</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>493</id>
+		<name>Jetmax</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>494</id>
+		<name>Hotring Racer</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>495</id>
+		<name>Sandking</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>496</id>
+		<name>Blista Compact</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>497</id>
+		<name>Police Maverick</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>498</id>
+		<name>Boxville</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>499</id>
+		<name>Benson</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>500</id>
+		<name>Mesa</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>501</id>
+		<name>RC Goblin</name>
+		<type>RC Vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>502</id>
+		<name>Hotring Racer 2</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>503</id>
+		<name>Hotring Racer 3</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>504</id>
+		<name>Bloodring Banger</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>506</id>
+		<name>Super GT</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>507</id>
+		<name>Elegant</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>508</id>
+		<name>Journey</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>509</id>
+		<name>Bike</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>510</id>
+		<name>Mountain Bike</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>511</id>
+		<name>Beagle</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>512</id>
+		<name>Cropduster</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>513</id>
+		<name>Stuntplane</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>514</id>
+		<name>Tanker</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>515</id>
+		<name>Roadtrain</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>516</id>
+		<name>Nebula</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>517</id>
+		<name>Majestic</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>518</id>
+		<name>Buccaneer</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>519</id>
+		<name>Shamal</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>520</id>
+		<name>Hydra</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>521</id>
+		<name>FCR-900</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>522</id>
+		<name>NRG-500</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>523</id>
+		<name>HPV1000</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>524</id>
+		<name>Cement Truck</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>525</id>
+		<name>Towtruck</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>526</id>
+		<name>Fortune</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>527</id>
+		<name>Cadrona</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>528</id>
+		<name>FBI Truck</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>529</id>
+		<name>Willard</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>530</id>
+		<name>Forklift</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>531</id>
+		<name>Tractor</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>532</id>
+		<name>Combine Harvester</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>533</id>
+		<name>Feltzer</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>534</id>
+		<name>Remington</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>535</id>
+		<name>Slamvan</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>536</id>
+		<name>Blade</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>537</id>
+		<name>Freight</name>
+		<type>Trains &amp; Railroad cars</type>
+	</vehicle>
+	<vehicle>
+		<id>538</id>
+		<name>Brown Streak</name>
+		<type>Trains &amp; Railroad cars</type>
+	</vehicle>
+	<vehicle>
+		<id>539</id>
+		<name>Vortex</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>540</id>
+		<name>Vincent</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>541</id>
+		<name>Bullet</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>542</id>
+		<name>Clover</name>
+		<type>Muscle cars</type>
+	</vehicle>
+	<vehicle>
+		<id>543</id>
+		<name>Sadler</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>544</id>
+		<name>Fire Truck</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>545</id>
+		<name>Hustler</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>546</id>
+		<name>Intruder</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>547</id>
+		<name>Primo</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>548</id>
+		<name>Cargobob</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>549</id>
+		<name>Tampa</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>550</id>
+		<name>Sunrise</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>551</id>
+		<name>Merit</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>552</id>
+		<name>Utility Van</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>553</id>
+		<name>Nevada</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>554</id>
+		<name>Yosemite</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>555</id>
+		<name>Windsor</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>556</id>
+		<name>Monster 2</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>557</id>
+		<name>Monster 3</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>558</id>
+		<name>Uranus</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>559</id>
+		<name>Jester</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>560</id>
+		<name>Sultan</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>561</id>
+		<name>Stratum</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>562</id>
+		<name>Elegy</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>563</id>
+		<name>Raindance</name>
+		<type>Helicopter</type>
+	</vehicle>
+	<vehicle>
+		<id>564</id>
+		<name>RC Tiger</name>
+		<type>RC Vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>565</id>
+		<name>Flash</name>
+		<type>Street racers</type>
+	</vehicle>
+	<vehicle>
+		<id>566</id>
+		<name>Tahoma</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>567</id>
+		<name>Savanna</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>568</id>
+		<name>Bandito</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>569</id>
+		<name>Flat Freight</name>
+		<type>Trains &amp; Railroad cars</type>
+	</vehicle>
+	<vehicle>
+		<id>570</id>
+		<name>Brown Streak Carriage</name>
+		<type>Trains &amp; Railroad cars</type>
+	</vehicle>
+	<vehicle>
+		<id>571</id>
+		<name>Kart</name>
+		<type>Recreational</type>
+	</vehicle>
+	<vehicle>
+		<id>572</id>
+		<name>Mower</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>573</id>
+		<name>Dune</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>574</id>
+		<name>Sweeper</name>
+		<type>Civil service</type>
+	</vehicle>
+	<vehicle>
+		<id>575</id>
+		<name>Broadway</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>576</id>
+		<name>Tornado</name>
+		<type>Lowriders</type>
+	</vehicle>
+	<vehicle>
+		<id>577</id>
+		<name>AT-400</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>578</id>
+		<name>DFT-30</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>580</id>
+		<name>Stafford</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>581</id>
+		<name>BF-400</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>582</id>
+		<name>News Van</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>583</id>
+		<name>Tug</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>584</id>
+		<name>Petrol trailer</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>585</id>
+		<name>Emperor</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>586</id>
+		<name>Wayfarer</name>
+		<type>Bikes</type>
+	</vehicle>
+	<vehicle>
+		<id>587</id>
+		<name>Euros</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>588</id>
+		<name>Hotdog</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>589</id>
+		<name>Club</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>590</id>
+		<name>Box Freight</name>
+		<type>Trains &amp; Railroad cars</type>
+	</vehicle>
+	<vehicle>
+		<id>591</id>
+		<name>Trailer 3</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>592</id>
+		<name>Andromada</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>593</id>
+		<name>Dodo</name>
+		<type>Plane</type>
+	</vehicle>
+	<vehicle>
+		<id>594</id>
+		<name>RC Cam</name>
+		<type>RC Vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>595</id>
+		<name>Launch</name>
+		<type>Boats</type>
+	</vehicle>
+	<vehicle>
+		<id>596</id>
+		<name>Police LS</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>597</id>
+		<name>Police SF</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>598</id>
+		<name>Police LV</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>599</id>
+		<name>Police Ranger</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>600</id>
+		<name>Picador</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>601</id>
+		<name>S.W.A.T.</name>
+		<type>Government vehicles</type>
+	</vehicle>
+	<vehicle>
+		<id>602</id>
+		<name>Alpha</name>
+		<type>2-Door &amp; Compact cars</type>
+	</vehicle>
+	<vehicle>
+		<id>603</id>
+		<name>Phoenix</name>
+		<type>Muscle cars</type>
+	</vehicle>
+	<vehicle>
+		<id>604</id>
+		<name>Damaged Glendale</name>
+		<type>4-Door &amp; Luxury cars</type>
+	</vehicle>
+	<vehicle>
+		<id>605</id>
+		<name>Damaged Sadler</name>
+		<type>Light trucks &amp; Vans</type>
+	</vehicle>
+	<vehicle>
+		<id>606</id>
+		<name>Baggage Trailer</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>607</id>
+		<name>Baggage Trailer</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>608</id>
+		<name>Trailer</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>609</id>
+		<name>Boxville Mission</name>
+		<type>Heavy &amp; Utility trucks</type>
+	</vehicle>
+	<vehicle>
+		<id>610</id>
+		<name>Farm Trailer</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+		<id>611</id>
+		<name>Trailer</name>
+		<type>Trailers</type>
+	</vehicle>
+	<vehicle>
+        <id>579</id>
+        <name>Huntley</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>400</id>
+        <name>Landstalker</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>404</id>
+        <name>Perennial</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>489</id>
+        <name>Rancher</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>505</id>
+        <name>Rancher Lure</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>479</id>
+        <name>Regina</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>442</id>
+        <name>Romero</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+    <vehicle>
+        <id>458</id>
+        <name>Solair</name>
+        <type>SUVs &amp; Wagons</type>
+    </vehicle>
+</vehicles>

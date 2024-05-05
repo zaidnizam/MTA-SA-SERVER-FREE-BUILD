@@ -1,0 +1,10 @@
+<meta>
+    <script src="shop_client.lua" type="client" />
+    <script src="shop_server.lua" type="server" />
+
+    <file src="frontend/index.html"/>
+    <file src="frontend/style/tailwind.min.js"/>
+    <file src="frontend/style/tailwind.min.css"/>
+    <file src="frontend/style/alpine.min.js"/>
+    <file src="vehicle_details.xml"/>
+</meta>
