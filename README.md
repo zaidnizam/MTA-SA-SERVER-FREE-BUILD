@@ -14,7 +14,7 @@ Explore the labyrinthine depths of our repository and **uncover treasures beyond
 
 We extend our heartfelt gratitude to the visionary minds and tireless souls who contributed to the creation of this repository. Your dedication and expertise have woven the very fabric of this immersive experience. Together, we've forged a path into the unknown, shaping worlds and defying limits.
 
-- **John Doe**: For groundbreaking contributions in script optimization.
+- [**John Doe**: For groundbreaking contributions in script optimization.](https://example.com/MTASAOfficial)
 - **Jane Smith**: For designing stunning visual enhancements that elevate gameplay to new heights.
 - **Max Johnson**: For relentless testing and invaluable feedback that ensured seamless integration.
 - **Emily Davis**: For her expertise in database management, ensuring stability and performance.
