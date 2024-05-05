@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XML Reader Challenge</title>
+  <link href="tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="ex" class="text-red-500">[[1,54,5,43,76,43,9,32,54,76,3,54]]</p>
+  <div class="main-items-type">
+    <div class="main-items-type-images">
+      <img src="images/-1.png" alt="weapon" onclick="toggleContainer('weapon')">
+      <img src="images/48.png" alt="bag" onclick="toggleContainer('bag')">
+      <img src="images/12.png" alt="food" onclick="toggleContainer('food')">
+      <img src="images/3.png" alt="wallet" onclick="toggleContainer('wallet')">
+    </div>
+  </div>
+  <div class="container">
+    <p id="errormsg" class="text-red-600"></p>
+    <div id="main-container" class="mx-auto p-4 rounded-lg shadow-md w-300 h-250">
+      <div class="grid-container" ondragover="allowDrop(event)" ondrop="drop(event)">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to read and parse XML file
+    function readXML() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var xmlDoc = this.responseXML;
+          var items = xmlDoc.getElementsByTagName("item");
+          var exContent = document.getElementById("ex").innerText;
+          var itemIDs = exContent.match(/\d+/g); // Extract item IDs from exContent
+          var output = "";
+          var idCount = {}; // Object to store item ID counts
+
+          // Count the occurrences of each item ID
+          for (var i = 0; i < itemIDs.length; i++) {
+            var itemID = itemIDs[i];
+            idCount[itemID] = (idCount[itemID] || 0) + 1;
+          }
+
+          // Iterate through each item
+          for (var i = 0; i < items.length; i++) {
+            var itemID = items[i].getAttribute("itemID");
+            var type = items[i].getAttribute("type");
+            var imagePath = items[i].getAttribute("imagePath");
+            var quantity = items[i].getAttribute("quantity"); // Added quantity attribute
+
+            // Check if itemID exists in itemIDs and if it matches the selected type
+            if (itemIDs.includes(itemID) && type === selectedType) {
+              output += "<div class='grid-item relative draggable' draggable='true' data-itemID='" + itemID + "' ondragstart='dragStart(event)' ondragend='dragEnd(event)'>";
+
+              // Determine quantity based on count of item ID
+              var count = idCount[itemID];
+              var displayQuantity = count > 1 ? "x" + count : "x1"; // Display quantity only if count is greater than 1
+
+              output += "<div class='quantity'><p class='quantity-it'>" + displayQuantity + "</p></div>"; // Quantity indicator
+
+              output += "<div class='item-options'>"; // Container for item options
+              output += "<button class='use-btn' onclick='useItem(" + itemID + ")'>USE</button>"; // Use button
+              output += "<button class='delete-btn' onclick='deleteItem(" + itemID + ")'>DELETE</button>"; // Delete button
+              output += "</div>";
+
+              output += "<img class='hover:' src='" + imagePath + "' alt='Image for item ID " + type + "'>";
+              output += "</div>";
+            }
+          }
+
+          document.querySelector(".grid-container").innerHTML = output;
+        }
+      };
+      xhttp.open("GET", "items.xml", true);
+      xhttp.send();
+    }
+
+    var selectedType = ''; // Variable to store the selected type
+
+    // Function to toggle item type
+    function toggleContainer(type) {
+      var element = document.getElementById('ex');
+      var content = element.textContent;
+      var updatedContent = content.replace(/"/g, ''); // Replace all double quotes globally
+     //  
+      console.log("uggfgfgsbdkfgisdhfug", updatedContent)
+      element.textContent = updatedContent;
+      selectedType = type; // Update selected type
+      readXML(); // Reload the XML data based on the selected type
+    }
+
+    readXML(); // Initial call to load XML data
+
+// Function to handle item usage
+function useItem(itemID) {
+  mta.triggerEvent("updateInventoryDB", "useItem", itemID);
+ // mta.triggerEvent("updateInventoryDB", "useItem", itemID); 
+  // Decrease item quantity by 1 if it's greater than 1
+  var item = document.querySelector(".grid-item[data-itemID='" + itemID + "']");
+  var quantityElement = item.querySelector(".quantity-it");
+  var currentQuantity = parseInt(quantityElement.textContent.replace("x", ""));
+  if (currentQuantity > 1) {
+    currentQuantity--;
+    quantityElement.textContent = "x" + currentQuantity;
+  } else {
+    // If quantity is 1, remove the item from the grid
+    item.remove();
+  }
+
+  // Update the content of the <p> element to remove the itemID from the list
+  updateItemIDInParagraph(itemID, "use");
+}
+
+// Function to handle item deletion
+function deleteItem(itemID) {
+  mta.triggerEvent("updateInventoryDB", "deleteItem", itemID);
+  // Code to handle item deletion
+  console.log("Item " + itemID + " deleted");
+  // Remove the item from the inventory display
+  var item = document.querySelector(".grid-item[data-itemID='" + itemID + "']");
+  item.remove();
+
+  // Update the content of the <p> element to remove the itemID from the list
+  updateItemIDInParagraph(itemID, "delete");
+}
+
+// Function to update the content of the <p> element to remove the specified itemID
+  function updateItemIDInParagraph(itemID, action) {
+    var paragraph = document.getElementById("ex");
+    var content = paragraph.textContent.trim(); // Remove leading/trailing whitespace
+    console.log(content)
+    var itemIDs = JSON.parse(content); // Parse the JSON string to a JavaScript object
+    console.log(itemIDs)
+    // Loop through the array and remove the itemID
+    for (var i = 0; i < itemIDs.length; i++) {
+      var index = itemIDs[i].indexOf(itemID);
+      if (index !== -1) {
+        // Remove only one occurrence of the itemID from the array
+        itemIDs[i].splice(index, 1);
+        // Exit the loop since one occurrence of the itemID has been removed
+        break;
+      }
+    }
+    // Update the content of the <p> element with the modified itemIDs
+   var ds = paragraph.textContent = JSON.stringify(itemIDs);
+   // mta.triggerEvent("updateInventoryDBr", "updateItemIDInParagraph", ds); 
+   console.log("jds", ds);
+  
+  }
+  
+
+  </script>
+</body>
+</html>

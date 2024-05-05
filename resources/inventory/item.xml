@@ -1,0 +1,32 @@
+<inventory>
+    <item>
+        <weight>0.5</weight> 
+        <name>Haggis</name>
+        <description>A savory pudding made with sheep's pluck (heart, liver, and lungs), minced with onion, oatmeal, and spices, encased in a sheep's stomach lining.</description>
+        <type>food</type>
+    </item>      
+    <item>
+        <weight>0.1</weight>
+        <name>Knuckle Duster</name>
+        <description>A metal weapon worn on the knuckles for punching.</description>
+        <type>weapon</type>
+      </item>      
+      <item>
+        <weight>0.2</weight>
+        <name>Cell Phone</name>
+        <description>A gray cell phone with a blank screen.</description>
+        <type>other</type>
+    </item>   ░      
+    <item>
+        <weight>0.2</weight>
+        <name>Wallet</name>
+        <description>Your trusty wallet, holding all your hard-earned cash.</description>
+        <type>wallet</type>
+    </item>
+    <item>
+        <weight>1.0</weight>
+        <name>Spoon</name>
+        <description>A metal spoon with a round bowl and a curved handle.</description>
+        <type>utensil</type>
+      </item>      
+</inventory>

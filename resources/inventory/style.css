@@ -1,0 +1,157 @@
+.hide {
+    color: transparent;
+  }
+  .main-items-type-images {
+    position: fixed;
+    right: 17px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px; /* Add padding for spacing */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 999; /* Ensure the items appear on top */
+  }
+  .main-items-type-images img {
+    width: 40px; /* Adjusted width for smaller size */
+    height: auto; /* Ensure aspect ratio is maintained */
+    border-radius: 50%; /* Circular image shape */
+    border: 2px solid white; /* White border around images */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  .main-items-type-images img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  .container {
+    position: fixed;
+    right: -40px;
+    bottom: 65px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    overflow-y: auto;
+  }
+  .grid-container {
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 0.195fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    gap: 2px; /* Optional: Adjust the gap between grid items */
+    justify-content: center;
+    align-items: end;
+    overflow-y: auto; /* Add scroll effect */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  }
+
+  .grid-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+
+  .grid-container > .grid-item {
+    position: relative;
+    border-color: black 1px;
+    width: 50px;
+    height:50px;
+    background-color: #70707070;
+    border-radius: 3px; /* Making the grid items round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .grid-container > .grid-item:last-child {
+    overflow-y: auto;
+    grid-column: 4;
+    grid-row: 5;
+  }
+
+  .quantity {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(24, 255, 24, 0.925);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+  }
+  .quantity .quantity-it {
+    color: #ffffff;
+    font-size: 8px;
+  }
+  .grid-item:hover {
+    transition-duration: 250ms;
+    background-color: #838383;
+  }
+  .action-items {
+    position: fixed;
+    left: 10px;
+    bottom: 130px;
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: center;
+    gap: 10px;
+    z-index: 999; /* Ensure the items appear on top */
+  }
+  .action-items img {
+    width: 50px;
+    height: auto;
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+  }
+  .action-items img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  .draggable {
+    cursor: move;
+  }
+  .dragging {
+    opacity: 0.5;
+  }
+  .dragging-cursor {
+    cursor: grabbing;
+  }
+
+  .item-options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .item-options {
+  opacity: 1;
+}
+
+.use-btn,
+.delete-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 1px 3px;
+margin-top: 1px;
+  cursor: pointer;
+}
+
+.use-btn:hover {
+  background-color: rgb(61, 255, 13);
+  color: white;
+  transition-duration: 150ms;
+}
+
+.delete-btn:hover {
+  background-color: rgb(255, 13, 13);
+  color: white;
+  transition-duration: 150ms;
+}
